@@ -5,7 +5,9 @@ function CategoryItem({ item }) {
   return (
     <div className="card">
       <div className="card-image waves-effect waves-block waves-light">
-        <img src={item.strCategoryThumb} alt={item.strCategory} />
+        <Link to={`/${item.strCategory}`}>
+          <img src={item.strCategoryThumb} alt={item.strCategory} />
+        </Link>
       </div>
       <div className="card-content">
         <span className="card-title activator grey-text text-darken-4">

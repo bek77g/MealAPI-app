@@ -5,7 +5,9 @@ function IngridientItem({ item, name }) {
   return (
     <div className="card">
       <div className="card-image waves-effect waves-block waves-light">
-        <img src={item.strMealThumb} alt={item.strMeal} />
+        <Link to={`/${name}/${item.idMeal}`}>
+          <img src={item.strMealThumb} alt={item.strMeal} />
+        </Link>
       </div>
       <div className="card-content">
         <span className="card-title activator grey-text text-darken-4">
